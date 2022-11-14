@@ -68,6 +68,7 @@ export function parseFilterArgs<TFilters extends QueryFilters>(
   arg2?: TFilters
 ): TFilters {
   if (isQueryKey(arg1)) {
+    // @ts-ignore
     return Object.assign(arg2, { queryKey: arg1 });
   }
 
@@ -103,6 +104,7 @@ export function parseMutationFilterArgs(
   arg2?: MutationFilters
 ): MutationFilters | undefined {
   if (isQueryKey(arg1)) {
+    // @ts-ignore
     return Object.assign(arg2, {
       mutationKey: arg1,
     });
@@ -135,6 +137,7 @@ export function cloneDeep<T>(
   }
 
   if (typeof value === "object" && isPlainObject(value)) {
+    // @ts-ignore
     const entries = Object.entries(value).map(([key, val]) => [
       key,
       cloneDeep(val, customizer),

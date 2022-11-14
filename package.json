@@ -1,6 +1,6 @@
 {
-  "name": "vue-query",
-  "version": "1.0.0-semantic",
+  "name": "@kazumachihaya/vue-query",
+  "version": "1.26.0",
   "description": "Hooks for fetching, caching and updating asynchronous data in Vue",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -44,7 +44,7 @@
     "@vue/devtools-api": "^6.1.4",
     "match-sorter": "^6.3.1",
     "react-query": "^3.39.0",
-    "vue-demi": "0.10.1"
+    "vue-demi": "^0.13.11"
   },
   "peerDependencies": {
     "@nuxtjs/composition-api": "^0.28.0",
